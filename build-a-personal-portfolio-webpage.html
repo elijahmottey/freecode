@@ -1,0 +1,117 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+      /* Styles for the welcome section */
+      #welcome-section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F5F5;
+      }
+      #welcome-section h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: #333;
+      }
+      
+      /* Styles for the projects section */
+      #projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem;
+      }
+      .project-tile {
+        width: 30%;
+        margin-bottom: 2rem;
+        box-shadow: 0px 0px 5px #888888;
+        padding: 1rem;
+        text-align: center;
+      }
+      
+      /* Styles for the navbar */
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 0 1rem;
+      }
+      #navbar a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+      }
+      #navbar a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Media query for smaller screens */
+      @media (max-width: 768px) {
+        #projects .project-tile {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <a href="#welcome-section">Welcome</a>
+      <a href="#projects">Projects</a>
+      <a href="#" id="profile-link" target="_blank">My GitHub</a>
+    </nav>
+    
+    <!-- Welcome section -->
+    <section id="welcome-section">
+      <h1>Welcome to my Portfolio</h1>
+    </section>
+    
+    <!-- Projects section -->
+    <section id="projects">
+      <div class="project-tile">
+        <h2>Project 1</h2>
+        <p>A description of project 1</p>
+        <a href="#">View project</a>
+      </div>
+      <div class="project-tile">
+        <h2>Project 2</h2>
+        <p>A description of project 2</p>
+        <a href="#">View project</a>
+      </div>
+      <div class="project-tile">
+        <h2>Project 3</h2>
+        <p>A description of project 3</p>
+        <a href="#">View project</a>
+      </div>
+    </section>
+    
+    <!-- Script to open GitHub profile in new tab -->
+    <script>
+      document.getElementById("profile-link").href = "https://github.com/yourusername";
+    </script>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+

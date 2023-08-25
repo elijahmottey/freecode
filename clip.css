@@ -1,0 +1,39 @@
+div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+   
+    margin:15% auto;
+    background:radial-gradient(red,blue,green,gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: motion 8s  infinite linear;
+}
+
+span{
+   color:transparent; 
+   text-align: center;
+   background:radial-gradient(rgb(197, 105, 105),rgb(87, 87, 117),rgb(150, 204, 150),rgb(128, 120, 79));
+   z-index: -2;
+   box-shadow: 2px 2px 3px 3px black;
+   border-radius: 20px 40%;
+
+
+}
+
+@keyframes motion {
+    from{
+        transform: rotate(-30deg);
+        /* background: red; */
+        
+    }
+   
+    to{
+        transform: rotate(360deg);
+        /* background: blue; */
+        width: 50%;
+    }
+
+   
+}
